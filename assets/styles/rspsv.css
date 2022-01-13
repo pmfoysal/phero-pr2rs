@@ -104,3 +104,23 @@
       white-space: nowrap;
    }
 }
+
+/* ===>>> Some Padding Responsive Styles Here <<<=== */
+
+@media screen and (max-width: 400px) {
+   #player .container,
+   #blog .container,
+   #course .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+}
+
+@media screen and (max-width: 300px) {
+   #player .container,
+   #blog .container,
+   #course .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+   }
+}
