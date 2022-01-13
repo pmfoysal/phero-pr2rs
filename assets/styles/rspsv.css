@@ -22,11 +22,12 @@
    }
 }
 
-/* ===>>> Player, Blog Section Responsive Styles Here <<<=== */
+/* ===>>> Player, Blog & Course Section Responsive Styles Here <<<=== */
 
 @media screen and (max-width: 1000px) {
    #player .players,
-   #blog .blogs {
+   #blog .blogs,
+   #course .courses {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -34,19 +35,37 @@
    }
 }
 
-/* ===>>> Player Section Responsive Styles Here <<<=== */
+/* ===>>> Player & Course Section Responsive Styles Here <<<=== */
 
 @media screen and (max-width: 1000px) {
-   #player .player {
+   #player .player,
+   #course .course {
       width: 28rem;
       flex-shrink: 0;
    }
 }
 
 @media screen and (max-width: 375px) {
-   #player .player {
+   #player .player,
+   #course .course {
       flex-direction: column;
       width: 100%;
+   }
+
+   #course .course img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2/1.5;
+   }
+
+   #course .course .textArea {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   #course .course .textArea .ratings {
+      flex-direction: column;
    }
 }
 
@@ -86,7 +105,6 @@
    }
 }
 
-#course,
 #footer {
    display: none;
 }
