@@ -22,16 +22,21 @@
    }
 }
 
-/* ===>>> Player Section Responsive Styles Here <<<=== */
+/* ===>>> Player, Blog Section Responsive Styles Here <<<=== */
 
 @media screen and (max-width: 1000px) {
-   #player .players {
+   #player .players,
+   #blog .blogs {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
    }
+}
 
+/* ===>>> Player Section Responsive Styles Here <<<=== */
+
+@media screen and (max-width: 1000px) {
    #player .player {
       width: 28rem;
       flex-shrink: 0;
@@ -45,7 +50,42 @@
    }
 }
 
-#blog,
+/* ===>>> Blog Section Responsive Styles Here <<<=== */
+
+@media screen and (max-width: 1000px) {
+   #blog .blog {
+      width: 44rem;
+   }
+}
+
+@media screen and (max-width: 530px) {
+   #blog .blog {
+      flex-direction: column;
+   }
+
+   #blog .blog img {
+      width: 100%;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   #blog .blog {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   #blog .blog .textArea p {
+      white-space: normal;
+   }
+
+   #blog .blog .textArea a {
+      white-space: nowrap;
+   }
+}
+
 #course,
 #footer {
    display: none;
