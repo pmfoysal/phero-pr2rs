@@ -1,0 +1,415 @@
+/* ===>>> Fonts Link Starts Here <<<=== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;550;700&display=swap');
+
+/* ===>>> Default CSS Styles Reset <<<=== */
+
+html {
+   scroll-behavior: smooth;
+   font-size: 62.5%;
+}
+
+body {
+   background-color: #ededff;
+}
+
+::selection {
+   color: white;
+   background-color: rgb(121, 0, 255);
+}
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   border: 0;
+   box-sizing: border-box;
+   font-size: 1.6rem;
+   font-family: 'Inter', 'Roboto', sans-serif;
+   font-weight: 400;
+   position: relative;
+   background-color: transparent;
+   margin-block-start: 0;
+   margin-block-end: 0;
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+}
+
+a,
+p,
+small {
+   text-decoration: none;
+   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 700;
+   line-height: 1.25;
+   text-transform: capitalize;
+}
+
+h1 {
+   font-size: 6rem;
+}
+
+h2 {
+   font-size: 5rem;
+}
+
+h3 {
+   font-size: 4rem;
+}
+
+h4 {
+   font-size: 3rem;
+}
+
+h5 {
+   font-size: 2.5rem;
+}
+
+h6 {
+   font-size: 2rem;
+}
+
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   text-transform: capitalize;
+   font-weight: 550;
+   font-size: 1.5rem;
+   background-color: rgb(121, 0, 255);
+   padding: 1.4rem 2.8rem;
+   border-radius: 0.8rem;
+   color: white;
+}
+
+input[type='submit']:active,
+input[type='reset']:active,
+input[type='button']:active,
+button:active {
+   transform: scale(0.975);
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover,
+button:hover {
+   opacity: 0.9;
+}
+
+img {
+   user-select: none;
+}
+
+/* ===>>> Common Styles Here <<<=== */
+
+section {
+   overflow: hidden;
+   padding: 5rem 1.5rem;
+}
+
+header {
+   padding: 2rem 1.5rem;
+   user-select: none;
+}
+
+.container {
+   max-width: 110rem;
+   margin: 0 auto;
+}
+
+.sectionTitle {
+   color: rgb(121, 0, 255);
+   font-size: 3.5rem;
+}
+
+/* ===>>> Header Section Styles Here <<<=== */
+
+#header {
+   background-color: rgb(121, 0, 255);
+}
+
+#header .container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   gap: 2rem;
+}
+
+#header .logoArea {
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+#header .logoArea img {
+   height: 4rem;
+   width: auto;
+}
+
+#header .logoArea h1 {
+   font-size: 3.5rem;
+   color: white;
+}
+
+#header .menuArea {
+   display: flex;
+   align-items: center;
+   gap: 3rem;
+}
+
+#header .menuArea a {
+   color: white;
+   text-transform: capitalize;
+   font-weight: 550;
+   font-size: 1.8rem;
+}
+
+#header .menuArea img {
+   height: 4.5rem;
+   width: auto;
+   cursor: pointer;
+}
+
+/* ===>>> Player, Blog & Course Section Styles Here <<<=== */
+
+#player .container,
+#blog .container,
+#course .container {
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   background-color: white;
+   border-radius: 2.5rem;
+   padding: 3rem;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.033);
+}
+
+#blog,
+#course {
+   padding-top: 0;
+}
+
+/* ===>>> Player Section Styles Here <<<=== */
+
+#player .players {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+}
+
+#player .player {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   border-radius: 2rem;
+   padding: 1.5rem;
+   box-shadow: 0 0 1.25rem rgba(121, 0, 255, 0.08);
+}
+
+#player .player:hover {
+   cursor: pointer;
+   box-shadow: 0 0.25rem 1.25rem rgba(121, 0, 255, 0.15);
+}
+
+#player .player img {
+   height: 7rem;
+   width: auto;
+}
+
+#player .player a {
+   white-space: nowrap;
+   font-size: 2rem;
+   font-weight: 550;
+   color: black;
+   text-transform: capitalize;
+}
+
+/* ===>>> Blog Section Styles Here <<<=== */
+
+#blog .blogs {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 3rem;
+}
+
+#blog .blog {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   box-shadow: 0 0 1.25rem rgba(121, 0, 255, 0.08);
+   padding: 2rem;
+   border-radius: 2rem;
+}
+
+#blog .blog:hover {
+   cursor: pointer;
+   box-shadow: 0 0.25rem 1.25rem rgba(121, 0, 255, 0.15);
+}
+
+#blog .blog img {
+   height: 12.5rem;
+   width: auto;
+   border-radius: 1.25rem;
+}
+
+#blog .blog .textArea {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+}
+
+#blog .blog .textArea h2 {
+   font-size: 2rem;
+   font-weight: 550;
+   cursor: pointer;
+}
+
+#blog .blog .textArea p {
+   white-space: nowrap;
+   text-transform: capitalize;
+}
+
+#blog .blog .textArea a {
+   color: rgb(121, 0, 255);
+   font-weight: 550;
+}
+
+/* ===>>> Course Section Styles Here <<<=== */
+
+#course .courses {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+}
+
+#course .course {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   box-shadow: 0 0 1.25rem rgba(121, 0, 255, 0.08);
+   padding: 2rem;
+   border-radius: 2rem;
+}
+
+#course .course:hover {
+   cursor: pointer;
+   box-shadow: 0 0.25rem 1.25rem rgba(121, 0, 255, 0.15);
+}
+
+#course .course img {
+   height: 16rem;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 2rem;
+}
+
+#course .course .textArea {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 1.5rem;
+}
+
+#course .course .textArea h2 {
+   font-size: 2rem;
+   font-weight: 550;
+}
+
+#course .course .textArea a {
+   font-weight: 550;
+   color: rgb(121, 0, 255);
+   text-transform: capitalize;
+}
+
+#course .course .textArea .ratings {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+   width: 100%;
+}
+
+#course .course .textArea .ratings .stars {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   white-space: nowrap;
+}
+
+#course .course .textArea .ratings .stars * {
+   font-size: 1.5rem;
+   color: orange;
+}
+
+#course .course .textArea .ratings .stars svg.null * {
+   color: rgba(0, 0, 0, 0.25);
+}
+
+#course .course .textArea .ratings .stars p {
+   margin-left: 0.75rem;
+   font-weight: 550;
+   color: rgb(121, 0, 255);
+}
+
+#course .course .textArea .ratings .times {
+   display: flex;
+   align-items: center;
+   white-space: nowrap;
+   gap: 0.75rem;
+   border-radius: 5rem;
+   background-color: rgba(240, 0, 0, 0.1);
+   padding: 0.2rem 1rem;
+}
+
+#course .course:nth-child(2n) .textArea .ratings .times {
+   background-color: rgba(121, 0, 255, 0.1);
+}
+
+#course .course .textArea .ratings .times * {
+   color: rgba(240, 0, 0, 1);
+   font-size: 1.4rem;
+}
+
+#course .course:nth-child(2n) .textArea .ratings .times * {
+   color: rgba(121, 0, 255, 1);
+}
+
+/* ===>>> Footer Section Styles Here <<<=== */
+
+#footer {
+   padding: 2rem;
+   background-color: white;
+}
+
+#footer p {
+   text-align: center;
+   text-transform: capitalize;
+}
+
+#footer a {
+   color: rgba(121, 0, 255, 1);
+   background-color: rgba(121, 0, 255, 0.1);
+   padding: 0.25rem 0.6rem 0.4rem;
+   border-radius: 0.5rem;
+   font-weight: 550;
+}
+
+#footer a:hover {
+   color: white;
+   background-color: rgba(121, 0, 255, 1);
+}
