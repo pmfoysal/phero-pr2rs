@@ -1,0 +1,20 @@
+@media screen and (max-width: 500px) {
+   #header .menuArea {
+      display: none;
+   }
+
+   #header .hamMenuIcon {
+      display: block;
+   }
+
+   #header.active .hamMenuArea {
+      max-height: 25rem;
+   }
+}
+
+#player,
+#blog,
+#course,
+#footer {
+   display: none;
+}

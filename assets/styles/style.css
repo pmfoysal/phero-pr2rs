@@ -185,6 +185,83 @@ header {
    cursor: pointer;
 }
 
+#header .hamMenuIcon {
+   display: none;
+   height: 4rem;
+   width: 5rem;
+   border: 0.2rem solid rgba(255, 255, 255, 0.75);
+   border-radius: 0.75rem;
+}
+
+#header .hamMenuIcon .line {
+   height: 0.3rem;
+   width: 3rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border-radius: 1rem;
+   background-color: white;
+   transition: background-color 0.25s linear;
+   transform: translate(-50%, -50%);
+}
+
+#header .hamMenuIcon .line::before,
+#header .hamMenuIcon .line::after {
+   content: '';
+   position: absolute;
+   left: 50%;
+   height: inherit;
+   width: inherit;
+   border-radius: inherit;
+   background-color: white;
+   transform: translateX(-50%);
+   transform-origin: left center;
+   transition: transform 0.25s linear;
+}
+
+#header .hamMenuIcon .line::before {
+   top: -0.75rem;
+}
+
+#header .hamMenuIcon .line::after {
+   top: 0.75rem;
+}
+
+#header.active .hamMenuIcon .line {
+   background-color: transparent;
+}
+
+#header.active .hamMenuIcon .line::before,
+#header.active .hamMenuIcon .line::after {
+   top: 0;
+}
+
+#header.active .hamMenuIcon .line::before {
+   transform: rotate(45deg) translateX(-50%);
+}
+
+#header.active .hamMenuIcon .line::after {
+   transform: rotate(-45deg) translateX(-50%);
+}
+
+#header .hamMenuArea {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.25s linear;
+}
+
+#header .hamMenuArea .menuArea {
+   padding: 3rem 1.5rem 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+}
+
 /* ===>>> Player, Blog & Course Section Styles Here <<<=== */
 
 #player .container,
